@@ -5,10 +5,10 @@ function Careers() {
 
   return (
     <div className="careers">
-      {careers.map((career) => (
-        <Link to={career.id} key={career.id}>
-          <p>{career.title}</p>
-          <p>Based in {career.location}</p>
+      {careers.map(({ id, title, location }) => (
+        <Link to={id} key={id}>
+          <p>{title}</p>
+          <p>Based in {location}</p>
         </Link>
       ))}
     </div>

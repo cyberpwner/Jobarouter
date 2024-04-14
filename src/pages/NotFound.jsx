@@ -12,7 +12,7 @@ function NotFound() {
       </p>
 
       <p>
-        Go to the <Link to="/">Homepage</Link>.
+        Back to the <Link to="/">Homepage</Link>.
       </p>
     </div>
   );
