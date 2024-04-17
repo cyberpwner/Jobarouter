@@ -150,3 +150,8 @@ form label span {
 .breadcrumbs .crumb a {
   color: #ddd;
 }
+
+small.error {
+  display: block;
+  margin-block: 15px;
+}
