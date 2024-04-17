@@ -1,4 +1,13 @@
+import { useState } from 'react';
+import { Navigate } from 'react-router-dom';
+
 function About() {
+  const [user, setUser] = useState('mario');
+
+  if (!user) {
+    return <Navigate to="/" replace />;
+  }
+
   return (
     <div className="home">
       <h2>About Us</h2>
@@ -21,6 +30,10 @@ function About() {
         non odit saepe facere voluptas esse mollitia illo fuga exercitationem id
         dicta iusto eaque numquam quaerat ad! Fugit velit beatae laudantium.
       </p>
+
+      <button type="button" onClick={() => setUser(null)}>
+        Logout
+      </button>
     </div>
   );
 }
